@@ -1,0 +1,29 @@
+{
+  "name": "sitemapxml-writer",
+  "version": "1.0.0",
+  "description": "A lightweight and efficient library for generating XML sitemaps programmatically.",
+  "main": "src/sitemapxml-writer.cjs",
+  "module": "src/sitemapxml-writer.js",
+  "types": "src/sitemapxml-writer.d.ts",
+  "type": "module",
+  "exports": {
+    "import": "src/sitemapxml-writer.js",
+    "require": "src/sitemapxml-writer.cjs"
+  },
+  "keywords": [
+    "sitemap",
+    "sitemap.xml",
+    "xml",
+    "seo",
+    "web",
+    "crawler",
+    "search-engine",
+    "website-indexing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexstevovich/sitemapxml-writer-node"
+  },
+  "author": "Alex Stevovich",
+  "license": "MIT"
+}
