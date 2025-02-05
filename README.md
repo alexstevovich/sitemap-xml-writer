@@ -1,7 +1,7 @@
-# SitemapXML
+# sitemap.xml Writer
 
 ## Overview
-SitemapXML is an unopinionated utility for generating **sitemap.xml** files in compliance with search engine standards. It allows easy creation, management, and serialization of sitemap entries while ensuring XML validity.
+SITEMAP-XML-WRITER is an unopinionated utility for generating **sitemap.xml** files in compliance with search engine standards. It allows easy creation, management, and serialization of sitemap entries while ensuring XML validity.
 
 ## Features
 - **Structured Sitemap Entries** - Create structured URL entries with required metadata.
@@ -12,16 +12,16 @@ SitemapXML is an unopinionated utility for generating **sitemap.xml** files in c
 
 ## Installation
 ```sh
-npm install sitemapxml-writer
+npm install sitemap-xml-writer
 ```
 
 ## Usage
 ### Creating a Sitemap Entry
 ```javascript
-import { SitemapEntry } from 'sitemapxml';
+import { SitemapEntry } from 'sitemap-xml-writer';
 
 const entry = new SitemapEntry('https://example.com/about');
-console.log(entry.writeXML());
+console.log(entry.toXML());
 ```
 #### Output:
 ```xml
@@ -35,9 +35,9 @@ console.log(entry.writeXML());
 
 ### Generating a Full Sitemap
 ```javascript
-import { SitemapWriter } from 'sitemapxml';
+import { Sitemap } from 'sitemap-xml-writer';
 
-const sitemap = new SitemapWriter();
+const sitemap = new Sitemap();
 sitemap.addEntry(new SitemapEntry('https://example.com/'));
 sitemap.addEntry(new SitemapEntry('https://example.com/blog'));
 
@@ -74,7 +74,7 @@ new SitemapEntry(loc: string)
 | `loc`     | string | ✅       | The full URL of the page entry.   |
 
 #### Methods
-- **`writeXML()`** → Generates an XML string for the entry.
+- **`toXML()`** → Generates an XML string for the entry.
 
 ### `SitemapWriter`
 #### Constructor
@@ -83,7 +83,7 @@ new SitemapWriter()
 ```
 #### Methods
 - **`addEntry(entry: SitemapEntry)`** → Adds an entry to the sitemap.
-- **`writeXML()`** → Outputs the full sitemap.xml string.
+- **`toXML()`** → Outputs the full sitemap.xml string.
 
 ## License
 MIT License

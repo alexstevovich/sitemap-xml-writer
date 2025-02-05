@@ -1,4 +1,4 @@
-import { SitemapEntry } from "../src/sitemapxml-writer";
+import { SitemapEntry } from "../src/sitemap-xml-writer";
 
 const entry = new SitemapEntry("https://example.com");
 entry.lastmod = "2024-01-01T00:00:00Z";

@@ -1,4 +1,4 @@
-import { Sitemap, SitemapEntry } from "../src/sitemapxml.mjs";
+import { Sitemap, SitemapEntry } from "../src/sitemap-xml-writer.mjs";
 
 const sitemap = new Sitemap('https://example.com');
 sitemap.addEntry(new SitemapEntry('https://example.com/home'));

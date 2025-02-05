@@ -1,8 +1,8 @@
 import { spawn } from "child_process";
 
 const tests = [
-  { file: "test/test-esm.mjs", command: "node" },
-  { file: "test/test-cjs.cjs", command: "node" }
+  { file: "test/test.mjs", command: "node" },
+  { file: "test/test.cjs", command: "node" }
 ];
 
 tests.forEach(({ file, command }) => {
