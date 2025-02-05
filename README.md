@@ -1,7 +1,7 @@
-# SitemapXML Writer
+# SitemapXML
 
 ## Overview
-SitemapXML Writer is a lightweight and modular utility for generating **sitemap.xml** files in compliance with search engine standards. It allows easy creation, management, and serialization of sitemap entries while ensuring XML validity.
+SitemapXML is an unopinionated utility for generating **sitemap.xml** files in compliance with search engine standards. It allows easy creation, management, and serialization of sitemap entries while ensuring XML validity.
 
 ## Features
 - **Structured Sitemap Entries** - Create structured URL entries with required metadata.
@@ -18,7 +18,7 @@ npm install sitemapxml-writer
 ## Usage
 ### Creating a Sitemap Entry
 ```javascript
-import { SitemapEntry } from 'sitemapxml-writer';
+import { SitemapEntry } from 'sitemapxml';
 
 const entry = new SitemapEntry('https://example.com/about');
 console.log(entry.writeXML());
@@ -35,7 +35,7 @@ console.log(entry.writeXML());
 
 ### Generating a Full Sitemap
 ```javascript
-import { SitemapWriter } from 'sitemapxml-writer';
+import { SitemapWriter } from 'sitemapxml';
 
 const sitemap = new SitemapWriter();
 sitemap.addEntry(new SitemapEntry('https://example.com/'));
