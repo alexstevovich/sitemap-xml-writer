@@ -1,6 +1,6 @@
 {
   "name": "sitemapxml-writer",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "A lightweight and efficient library for generating XML sitemaps programmatically.",
   "main": "src/sitemapxml.js",
   "module": "src/sitemapxml.js",
@@ -10,7 +10,9 @@
     "import": "src/sitemapxml.js",
     "require": "src/sitemapxml.cjs"
   },
-  "files": ["src/"],
+  "files": [
+    "src/"
+  ],
   "keywords": [
     "sitemap",
     "sitemap.xml",
